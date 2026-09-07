@@ -277,15 +277,15 @@ Don't just learn. Build.
 📬 Contact
 如果你對我的作品或學習歷程有興趣，歡迎與我聯絡。
 
-Name: YOUR NAME
+Name: 李以恩
 
-Email: YOUR_EMAIL@example.com
+Email: 
 
 Portfolio:
-https://YOUR-USERNAME.github.io/my-portfolio/
+
 
 GitHub:
-https://github.com/YOUR-USERNAME
+
 
 ⭐ Thanks for Visiting
 謝謝你花時間查看我的 Portfolio。
