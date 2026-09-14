@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>數位科技概論作業 — 李以恩</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background: #0a0a0f;
+      color: #FFC1E0;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(900px, 90%);
+      margin: auto;
+    }
+
+    nav {
+      padding: 20px 0;
+      border-bottom: 1px solid #222;
+      background: rgba(10, 10, 15, 0.9);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #7c5cff;
+    }
+
+    .back {
+      color: #aaa;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      color: #7c5cff;
+    }
+
+    header {
+      padding: 90px 0 60px;
+      background:
+        radial-gradient(circle at 80% 20%, #302060 0%, transparent 30%),
+        radial-gradient(circle at 20% 80%, #102040 0%, transparent 30%);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border: 1px solid #7c5cff;
+      border-radius: 50px;
+      color: #a995ff;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #7c5cff, #3dd6ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .lead {
+      color: #aaa;
+      font-size: 18px;
+      max-width: 700px;
+    }
+
+    section {
+      padding: 55px 0;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid #252530;
+      border-radius: 15px;
+      background: #111118;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #aaa;
+    }
+
+    ul {
+      padding-left: 25px;
+      color: #aaa;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .tech {
+      margin-top: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: #7c5cff;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: #9278ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #555;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">PORTFOLIO.</div>
+      <a class="back" href="index_digital_tech.html">← 回到作品集</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="tag">數位科技概論 · 課堂作業</div>
+
+      <h1>
+        數位科技概論<br>
+        <span class="gradient">作業紀錄.</span>
+      </h1>
+
+      <p class="lead">
+        這個頁面用來整理我在數位科技概論課程中完成的 HTML 與 CSS
+        練習，以及從製作、修改到上傳 GitHub 的學習過程。
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <div class="card">
+        <h2>📚 作業內容</h2>
+        <p>
+          本次作業主要練習網頁的基本結構與樣式設計。
+          我透過 HTML 建立頁面內容，再使用 CSS 調整版面、文字、
+          顏色與卡片效果，最後將網站放到 GitHub 上。
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>💻 學習到的技術</h2>
+        <ul>
+          <li>HTML 基本標籤與網頁結構</li>
+          <li>CSS 顏色、字體與版面配置</li>
+          <li>使用 class 設計不同元件的樣式</li>
+          <li>建立可以點擊的連結與不同網頁</li>
+          <li>使用 GitHub 管理與發布網站</li>
+        </ul>
+
+        <div class="tech">
+          HTML · CSS · GitHub
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>✨ 我的心得</h2>
+        <p>
+          透過這次作業，我開始了解一個網站是如何從 HTML 結構
+          一步一步變成完整的網頁。雖然目前還在學習階段，
+          但我希望可以把每次課堂學到的內容累積起來，
+          讓這個作品集網站持續成長。
+        </p>
+      </div>
+
+      <a class="button" href="index_digital_tech.html">
+        ← 回到作品集
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 李以恩. Built with curiosity.
+  </footer>
+
+</body>
+</html>
