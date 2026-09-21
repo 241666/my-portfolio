@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 活動一～四｜李以恩</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background: #0a0a0f;
+      color: #f4d7e7;
+      line-height: 1.8;
+    }
+    a { color: #9f8cff; }
+    .container {
+      width: min(1050px, 92%);
+      margin: auto;
+    }
+    nav {
+      padding: 18px 0;
+      border-bottom: 1px solid #292434;
+      background: #10101a;
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo { font-weight: bold; color: #a995ff; }
+    header {
+      padding: 70px 0 45px;
+      background:
+        radial-gradient(circle at 80% 20%, #302060 0%, transparent 32%),
+        radial-gradient(circle at 20% 80%, #102040 0%, transparent 32%);
+    }
+    .tag {
+      display: inline-block;
+      border: 1px solid #7c5cff;
+      border-radius: 999px;
+      padding: 5px 13px;
+      color: #b9adff;
+      font-size: 14px;
+    }
+    h1 { font-size: clamp(38px, 7vw, 70px); line-height: 1.2; margin: 20px 0; }
+    h2 { color: #d9ccff; margin-top: 0; }
+    h3 { color: #b9adff; }
+    .gradient {
+      background: linear-gradient(90deg, #9c83ff, #54dfff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .lead, .muted { color: #b7b0bd; }
+    section { padding: 35px 0; }
+    .card {
+      background: #12121c;
+      border: 1px solid #2c2a3b;
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 24px;
+      overflow-x: auto;
+    }
+    .activity-label {
+      color: #7de3ff;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: .05em;
+    }
+    .demo-box {
+      border: 1px dashed #5d5578;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 14px;
+      background: #0d0d15;
+    }
+    img, video { max-width: 100%; height: auto; }
+    audio { max-width: 100%; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+    }
+    th, td {
+      border: 1px solid #665d78;
+      padding: 10px;
+      text-align: left;
+    }
+    th { color: #d9ccff; background: #211d32; }
+    label { display: inline-block; margin-bottom: 5px; }
+    input, select, textarea {
+      width: 100%;
+      max-width: 430px;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #655b7b;
+      border-radius: 7px;
+      background: #0c0c13;
+      color: #f4d7e7;
+    }
+    fieldset { border: 1px solid #655b7b; margin: 15px 0; padding: 15px; }
+    fieldset input { width: auto; margin: 0 6px 0 0; }
+    button {
+      padding: 10px 18px;
+      border: 0;
+      border-radius: 8px;
+      background: #7c5cff;
+      color: white;
+      font-weight: bold;
+    }
+    .note {
+      border-left: 4px solid #7c5cff;
+      padding-left: 15px;
+      color: #c4bdcf;
+    }
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #777080;
+      border-top: 1px solid #292434;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">PORTFOLIO · HTML 練習</div>
+      <a href="index.html">← 回到作品集</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <span class="tag">數位科技概論｜活動一～四</span>
+      <h1>HTML 基礎練習<br><span class="gradient">學習紀錄.</span></h1>
+      <p class="lead">
+        這個頁面整理活動一到活動四的練習內容，包含文字、影音素材、
+        清單與表格，以及表單元件。內容以課堂提供的範例為基礎，
+        並整合成一個可以在 GitHub Pages 上瀏覽的網頁。
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="card">
+        <div class="activity-label">ACTIVITY 01</div>
+        <h2>活動一｜HTML 文字層級</h2>
+        <p>這一活動練習使用不同的 HTML 標籤建立文字結構。</p>
+        <h1>小安的學習小站</h1>
+        <p>你好，我是小安。我喜歡畫畫，也喜歡探索新工具。</p>
+        <h2>我的學習興趣</h2>
+        <p>我想用 <b>數位設計</b>，把學習變得更有趣。</p>
+        <h3>這學期想試試看</h3>
+        <p>我的第一個挑戰是：<i>做一個介紹家鄉的網站</i>。</p>
+        <h2>我的知識小角落</h2>
+        <p>水的化學式是 H<sub>2</sub>O。</p>
+        <p>邊長 3 公分的正方形，面積是 9 cm<sup>2</sup>。</p>
+        <p class="note">學習重點：使用標題、段落、粗體、斜體、下標與上標，讓內容具有清楚的層級。</p>
+      </div>
+
+      <div class="card">
+        <div class="activity-label">ACTIVITY 02</div>
+        <h2>活動二｜圖片、聲音、影片與連結</h2>
+        <p>本活動使用圖片、音訊與影片，練習在 HTML 中放入多媒體素材。</p>
+
+        <h3>看一張圖片</h3>
+        <img src="media-02/flower-photo.png"
+             alt="一朵粉紅色波斯菊與黃色花心的攝影風格 AI 生成圖片"
+             width="300">
+        <p>這是攝影風格的 AI 生成花朵圖片，你注意到哪些部分？</p>
+
+        <h3>換一張透明背景 PNG</h3>
+        <p>下方區塊用淡色背景協助觀察透明圖片的效果。</p>
+        <div class="demo-box" style="background-color:#dcebea;">
+          <img src="media-02/flower-transparent.png"
+               alt="粉紅色花朵的透明背景 PNG 圖片"
+               width="240">
+        </div>
+
+        <h3>船長的一週行事曆</h3>
+        <img src="media-02/captain-calendar.svg"
+             alt="船長的一週行事曆，重點行程見下方文字"
+             width="700">
+        <p>教學用虛構行程：2026 年 9 月 14 日至 20 日。週一 10:00 啟航；週三 14:00 救生演練；週五 09:30 靠港補給；週日 10:00 返航。</p>
+
+        <h3>聽一段提示音</h3>
+        <audio src="media-02/notice.wav" controls></audio>
+        <p>聲音說明：三個由低到高的短音，提醒我們開始觀察。</p>
+
+        <h3>看一段影片</h3>
+        <video src="media-02/flower.mp4" controls width="300"></video>
+        <p>影片內容說明：花朵隨風擺動的短片，請觀察花朵的移動。</p>
+
+        <h3>素材來源</h3>
+        <p>花朵與透明花朵 PNG 由 AI 生成；行事曆 SVG 與提示音為課堂練習素材；影片採用 MDN 的 flower.mp4 示範檔。</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video" target="_blank" rel="noopener">查看 MDN 影片範例說明</a></p>
+      </div>
+
+      <div class="card">
+        <div class="activity-label">ACTIVITY 03</div>
+        <h2>活動三｜清單與表格</h2>
+        <p>本活動練習使用無序清單、有序清單與表格整理資訊。</p>
+
+        <h3>我想學的技能</h3>
+        <ul>
+          <li>網頁設計</li>
+          <li>圖片編輯</li>
+          <li>聲音錄製</li>
+        </ul>
+
+        <h3>我準備怎麼做</h3>
+        <ol>
+          <li>選一個想介紹的主題</li>
+          <li>整理文字和圖片</li>
+          <li>製作網頁並請同學試看</li>
+        </ol>
+
+        <h3>我的實作安排</h3>
+        <table>
+          <caption>技能與成果對照</caption>
+          <thead>
+            <tr>
+              <th scope="col">想學的技能</th>
+              <th scope="col">練習任務</th>
+              <th scope="col">預計成果</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>網頁設計</td>
+              <td>修改標題與自我介紹</td>
+              <td>一頁個人介紹</td>
+            </tr>
+            <tr>
+              <td>圖片編輯</td>
+              <td>挑選並整理作品圖片</td>
+              <td>三張作品配圖</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="activity-label">ACTIVITY 04</div>
+        <h2>活動四｜表單元件</h2>
+        <p>這是介面練習，請用虛構暱稱試填。資料不會送出或保存，不能當成正式報名。</p>
+
+        <h3>你想參加什麼？</h3>
+        <form>
+          <label for="nickname">你的暱稱</label><br>
+          <input id="nickname" name="nickname" type="text" placeholder="例如：小海豚">
+
+          <br>
+          <label for="workshop">想參加的活動</label><br>
+          <select id="workshop" name="workshop">
+            <option value="">請選擇活動</option>
+            <option value="drawing">插畫小卡</option>
+            <option value="story">故事創作</option>
+          </select>
+
+          <fieldset>
+            <legend>參加時段（單選）</legend>
+            <label><input type="radio" name="session" value="morning"> 上午場</label><br>
+            <label><input type="radio" name="session" value="afternoon"> 下午場</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>想練習的能力（可複選）</legend>
+            <label><input type="checkbox" name="skills" value="ideas"> 發想點子</label><br>
+            <label><input type="checkbox" name="skills" value="expression"> 表達想法</label>
+          </fieldset>
+
+          <label for="message">想告訴老師的事</label><br>
+          <textarea id="message" name="message" rows="3" placeholder="例如：我想和同學一起完成作品"></textarea><br>
+
+          <button type="button" disabled>報名功能尚未開放</button>
+        </form>
+        <p class="note">這個按鈕刻意停用。HTML 可以提供輸入與選擇介面，但本練習沒有接上處理或儲存資料的功能。</p>
+      </div>
+
+      <div class="card">
+        <h2>學習心得</h2>
+        <p>
+          透過活動一到活動四，我練習了 HTML 的基本結構與常用元素。
+          活動一讓我了解文字標籤的層級；活動二讓我學會放入圖片、聲音和影片；
+          活動三讓我可以用清單與表格整理資訊；活動四則讓我認識表單輸入元件。
+          接下來我希望能把這些基礎技巧運用到自己的作品集網站中。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 李以恩 · HTML 活動一～四
+  </footer>
+</body>
+</html>
